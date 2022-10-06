@@ -15,16 +15,53 @@ imB = imread("data_test\block.jpg");
 imA = imresize(imA,size_default);
 imB = imresize(imB,size_default);
 length(imA)
-imA_lists(1) = imA;
-imB_lists(1) = imB;
+imA_200 = imA;
+imB_200 = imB;
+
+imA = imresize(imA, 0.5, "bilinear");
+imB = imresize(imB, 0.5, "bilinear");
+imA_100  = imA;
+imB_100  = imB;
+imshow(imA);%確認用
+length(imA)%確認用
+
+imA = imresize(imA, 0.5, "bilinear");
+imB = imresize(imB, 0.5, "bilinear");
+imA_50  = imA;
+imB_50  = imB;
+imshow(imA);%確認用
+length(imA)%確認用
+
+imA = imresize(imA, 0.5, "bilinear");
+imB = imresize(imB, 0.5, "bilinear");
+imA_25  = imA;
+imB_25  = imB;
+imshow(imA);%確認用
+length(imA)%確認用
+
+imA = imresize(imA, 0.5, "bilinear");
+imB = imresize(imB, 0.5, "bilinear");
+imA_13  = imA;
+imB_13  = imB;
+imshow(imA);%確認用
+length(imA)%確認用
+
+imA = imresize(imA, 0.5, "bilinear");
+imB = imresize(imB, 0.5, "bilinear");
+imA_7  = imA;
+imB_7  = imB;
+imshow(imA);%確認用
+length(imA)%確認用
+
+imA = imresize(imA, 0.5, "bilinear");
+imB = imresize(imB, 0.5, "bilinear");
+imA_4  = imA;
+imB_4  = imB;
+imshow(imA);%確認用
+length(imA)%確認用
 
 
-while length(imB) > 5
-    i = i + 1;
-    imA = imresize(imA, 0.5, "bilinear");
-    imB = imresize(imB, 0.5, "bilinear");
-     = imA;
-    imB_lists(i) = imB;
-    imshow(imA);%確認用
-    length(imA);%確認用
-end
+
+
+    
+
